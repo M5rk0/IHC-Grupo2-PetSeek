@@ -1,0 +1,396 @@
+/* Estilos generales para todo el encabezado */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lalezar", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #8F52DC; /* Color morado */
+    font-family: "Lalezar", sans-serif;
+    font-size: 21px;
+    color: white;
+}
+
+
+.logo {
+    margin: 10px 0; /* 10px de margen arriba y abajo */
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+.buttons {
+    margin: 0;
+}
+
+/* Estilo para los enlaces "Sobre nosotros" y "Búsqueda de mascota" */
+.menu-link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Estilo específico para los botones "Iniciar sesión" y "Registrarse" */
+.button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: 3px solid white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+/* Añadir un efecto al pasar el cursor sobre los botones */
+.button:hover {
+    background: linear-gradient(to right, #8F52DC, #f1e129);
+    color: white;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    background: #F1CB38; /* Color amarillo */
+}
+
+section img {
+    max-width: 50%;
+    height: auto;
+}
+
+#conjuntoC {
+    background-color: rgb(232, 217, 251);
+    color: black;
+    text-align: center;
+    padding: 30px 0;
+}
+
+#conjuntoC i {
+    margin-top: 5%;
+}
+
+#conjuntoC .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 2px 30px;
+    margin: 40px;
+    border-radius: 5px;
+    border: 2px solid indigo;
+}
+
+.carta:first-child {
+    background-color: rgb(255, 255, 255);
+}
+
+.carta:nth-child(2) {
+    background-color: rgb(255, 255, 255);
+}
+
+.carta:nth-child(3) {
+    background-color: rgb(255, 255, 255);
+}
+
+@media (min-width: 720px) {
+    #conjuntoC .programas {
+        display: flex;
+        justify-content: center;
+    }
+
+    #conjuntoC .carta {
+        box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    #conjuntoC i {
+        margin-top: 4%;
+    }
+}
+
+/* Tercera parte de la landing page */
+.image-container {
+    display: flex;
+    align-items: center;
+}
+
+.image-container div {
+    margin-right: 20px;
+}
+
+.image-container img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.image-column {
+    margin-right: 15px;
+}
+
+/* contenerdores de los perros  */
+.dogs-container {
+    background-color: #FFFFFF;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.inline-container {
+    display: inline-flex;
+}
+
+/* seccion del perro de la izquierda */
+.image-container-dog-left {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    /* align-items: end; */
+}
+.image-container-dog-left img {
+    width: 70%;
+}
+
+/* imagenes de los perros de la derecha */
+.image-container-dog-right {
+    width: 50%;
+}
+
+.image-dog-top {
+    padding-bottom: 10px;
+}
+
+.image-dog-bottom {
+    padding-top: 10px;
+}
+
+.image-dog-top, .image-dog-bottom {
+    display: flex;
+    padding-left: 30px;
+}
+
+.image-container-dog-right img {
+    width: 50%;
+}
+
+/* seccion de los testimonios */
+.testimonials {
+    background-color: #E8D9FB;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.testimonials h1 {
+    font-family:Lalezar;
+    color: #8F52DC;
+    text-align: center;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-box-left {
+    margin-right: 35px;
+}
+
+.testimonial-box-right {
+    margin-left: 35px;
+}
+
+.testimonial-box-left, .testimonial-box-right {
+    background-color: #FFFFFF;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 270px;
+
+    & img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    & p {
+        font-family: 'Inter';
+        font-size: 14px;
+    }
+
+}
+
+
+.buttons_download {
+    background-color: #f1e129;
+    padding: 10px;
+    text-align: center;
+}
+
+.buttons_download h1 {
+    font-family: Lalezar;
+}
+
+.buttonD-container {
+    display: flex;
+    justify-content: center;  
+    gap: 40px;  
+    margin-bottom: 20px;  
+}
+.buttonD {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: center; 
+}
+
+.buttonD img {
+    max-width: 100%;
+    width:  500px;  
+    height: 100px; 
+}
+
+.buttonSocial-container {
+    display: flex;
+    justify-content: center;  
+    gap: 25px;  
+    margin-bottom: 10px;  
+}
+.buttonSocial {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: center; 
+}
+
+.buttonSocial img  {
+    max-width: 100%;
+    width:  50px;  
+    height: 50px; 
+}
+
+.footer {
+    font-family: Inter;
+    background-color: purple;
+    color: white;
+    text-align: left;
+    height: auto;  
+    line-height: 27px; /* Establece la altura de línea a 10px */
+}
+
+
+.menu .destacado {
+    font-family: Lalezar;
+    font-size: 35px; /* Tamaño de fuente más grande para el texto destacado */
+     
+}
+.social .destacado {
+    font-family: Lalezar;
+    font-size: 35px; /* Tamaño de fuente más grande para el texto destacado */
+     
+}
+.contact .destacado {
+    font-family: Lalezar;
+    font-size: 35px; /* Tamaño de fuente más grande para el texto destacado */
+     
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image {
+    flex: 1;
+    position: relative;
+    padding: 40px;
+}
+
+.image img {
+    max-width: 100%;
+    width: auto; /* Ancho de 20px */
+    height: auto; /* Altura de 15px */
+    
+}
+
+.menu, .social, .contact {
+    flex: 1;
+    position: relative;
+    padding: 20px;
+}
+
+.menu ul, .social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu a, .social a {
+    color: white;
+    text-decoration: none;
+}
+
+.divider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 9px;
+    width: 2px;
+    background-color: white;
+}
+
+
+.contact {
+    flex: 1;
+    position: relative;
+    padding: 20px;
+}
+
+.input-container {
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+ 
+.contact input {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    position: relative
+}
+
+
