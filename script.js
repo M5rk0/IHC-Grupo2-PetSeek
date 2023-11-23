@@ -11,7 +11,7 @@ function openPetSearch() {
 }
 
 function openTestimonials() {
-    window.location.href = "index.html#testimonios";
+    window.location.href = "index.html#testimonials";
 }
 
 function scrollToTop() {
@@ -20,13 +20,17 @@ function scrollToTop() {
 
 // function to detect user in input field and show a message after button is clicked
 function showName(event) {
-    
     event.preventDefault();
     var username = document.getElementById("username").value;
     var message = "Hola " + username + ", bienvenido a PetSeek! ";
     document.getElementById("message").innerHTML = message;
 }
 
-
-
+function sendMessageConfirmation(event){
+    event.preventDefault();
+    var username = document.getElementById("username").value;
+    var confirmationMessage = username + ", tu mensaje se envió correctamente!";
+    document.getElementById("confirmationMessage").innerHTML = confirmationMessage;
+}
+  
   
